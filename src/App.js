@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { render } from 'rax';
+import View from 'rax-view';
+import DriverUniversal from 'driver-universal';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    render(<View>This is Rax View</View>, document.getElementById('rax-container'), {
+      driver: DriverUniversal,
+    });
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <div id="rax-container"></div>
     </div>
   );
 }
