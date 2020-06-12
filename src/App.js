@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { render } from 'rax';
 import View from 'rax-view';
-import DriverUniversal from 'driver-universal';
+import * as DriverDom from 'driver-dom';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   useEffect(() => {
     render(<View>This is Rax View</View>, document.getElementById('rax-container'), {
-      driver: DriverUniversal,
+      driver: DriverDom,
     });
   }, []);
   return (
