@@ -9,9 +9,9 @@ import * as axios from 'axios';
     },
     data: {
       msgtype: 'markdown',
-      markdown: {
-        title: '我是一个工具人',
-        text: `Release`,
+      title: "哈哈哈哈我是标题",
+      "text": {
+        "content":"Release:我就是我, @XXX 是不一样的烟火"
       },
     },
   });
