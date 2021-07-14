@@ -11,7 +11,7 @@ import * as axios from 'axios';
       msgtype: 'markdown',
       markdown: {
         title: '我是一个工具人',
-        text: `- Feat: 哈哈哈哈哈`,
+        text: `Release`,
       },
     },
   });
